@@ -35,7 +35,7 @@ Edit `config.json` with your store details:
 
 ```json
 {
-  "base_url": "https://your-store.myshopify.com",
+  "base_url": "https://your-store-url-from-shopify-admin-preferences.com",
   "credentials": {
     "signature": "sig1=:your-signature-here:",
     "signature_input": "sig1=(\"@authority\" \"signature-agent\");keyid=\"your-key-id\";nonce=\"your-nonce\";tag=\"web-bot-auth\";created=timestamp;expires=timestamp",
@@ -43,6 +43,7 @@ Edit `config.json` with your store details:
   },
   "log_file": "sitemap_tool_log.txt"
 }
+
 ```
 
 ### Step 3: Get Shopify Crawler Credentials
@@ -53,6 +54,9 @@ For Shopify stores, you need to obtain crawler authentication credentials:
 2. **Navigate to**: `Online Store` → `Preferences`
 3. **Look for**: "Crawler access" or "Bot access" section
 4. **Copy the credentials** from the crawler access settings
+
+![Shopify Crawler Access Settings](crawler_access.png)
+*Example of Shopify crawler access settings in the admin panel*
 
 The credentials will look like this:
 - **Signature**: A long base64-encoded string
