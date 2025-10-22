@@ -1,0 +1,9 @@
+{
+  "base_url": "https://your-store-url-from-shopify-admin-preferences.com",
+  "credentials": {
+    "signature": "sig1=:your-signature-here:",
+    "signature_input": "sig1=(\"@authority\" \"signature-agent\");keyid=\"your-key-id\";nonce=\"your-nonce\";tag=\"web-bot-auth\";created=timestamp;expires=timestamp",
+    "signature_agent": "https://shopify.com"
+  },
+  "log_file": "sitemap_tool_log.txt"
+}
